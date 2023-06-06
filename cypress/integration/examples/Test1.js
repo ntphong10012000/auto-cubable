@@ -1,19 +1,22 @@
 describe('My first test suite', function() {
-
+    beforeEach(() => {
+        cy.login();
+      });
 it('test case 1', function() {
-cy.visit('https://workblink.com/sign-in')
+    
+//cy.visit('https://workblink.com/sign-in')
 //cy.visit('https://app.cubable.com')
 //input email address
-cy.xpath('//input[@placeholder="Type your email"]').type("phong.nguyen@cubable.com")
+//cy.xpath('//input[@placeholder="Type your email"]').type("phong.nguyen@cubable.com")
 //cy.xpath('//input[@placeholder="Type your email"]').type("nguyenphong10012000@gmail.com")
 //cy.get('wgc-form-field:nth-of-type(1) > .wgc-form-field__input-container > .ng-dirty.ng-touched.ng-valid').type("phong.nguyen@cubable.com")
 //input password
-cy.xpath('//input[@placeholder="Type a password"]').type("Phong1001")
+//cy.xpath('//input[@placeholder="Type a password"]').type("Phong1001")
 //cy.xpath('//input[@placeholder="Type a password"]').type("1")
 //click button sign in
-cy.xpath('//div[@class="wgc-button-wrapper"]').click()
+//cy.xpath('//div[@class="wgc-button-wrapper"]').click()
 // chọn workspace 
-cy.xpath('//body[1]/app[1]/section[1]/sign-in[1]/div[1]/div[1]/div[1]/div[1]/div[2]/wgc-scroll-bar[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[1]').click()
+//cy.xpath('//body[1]/app[1]/section[1]/sign-in[1]/div[1]/div[1]/div[1]/div[1]/div[2]/wgc-scroll-bar[1]/table[1]/tbody[1]/tr[2]/td[1]/div[1]/div[1]').click()
 //tạo collection 
 cy.xpath('//button[@class="wgc-button ml-15 wgc-primary wgc-button--has-icon wgc-button--medium wgc-button--center"]//div[@class="wgc-button-wrapper"]').click()
 cy.xpath('//button[@icon="collection-plus"]').click()
@@ -194,6 +197,7 @@ cy.xpath('//body[1]/app[1]/section[1]/sign-in[1]/div[1]/div[1]/div[1]/div[1]/div
 
 
 }  )*/
+
 })
 } )
 

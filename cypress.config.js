@@ -9,7 +9,13 @@ module.exports = defineConfig({
     specPattern: 'cypress/integration/examples/*.js',
   },
   
-    viewportWidth: 1900,
-    viewportHeight: 1000,
+    viewportWidth: 1920,
+    viewportHeight: 1080,
   
+    // kiểm tra có cần đăng nhập không
+      "env": {
+        "loggedIn": "true"
+      }
+    
+    
 });
